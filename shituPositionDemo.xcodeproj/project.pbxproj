@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EE38CEC1C4CD8C6001AE625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38CEB1C4CD8C6001AE625 /* main.m */; };
+		0EE38CEF1C4CD8C6001AE625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38CEE1C4CD8C6001AE625 /* AppDelegate.m */; };
+		0EE38CF21C4CD8C6001AE625 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38CF11C4CD8C6001AE625 /* ViewController.m */; };
+		0EE38CF51C4CD8C6001AE625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE38CF31C4CD8C6001AE625 /* Main.storyboard */; };
+		0EE38CF71C4CD8C6001AE625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE38CF61C4CD8C6001AE625 /* Assets.xcassets */; };
+		0EE38CFA1C4CD8C6001AE625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE38CF81C4CD8C6001AE625 /* LaunchScreen.storyboard */; };
+		0EE38D051C4CD8C6001AE625 /* shituPositionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38D041C4CD8C6001AE625 /* shituPositionDemoTests.m */; };
+		0EE38D101C4CD8C6001AE625 /* shituPositionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38D0F1C4CD8C6001AE625 /* shituPositionDemoUITests.m */; };
+		0EE38D5B1C4CD91B001AE625 /* SHTLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38D1D1C4CD91B001AE625 /* SHTLocationViewController.m */; };
+		0EE38D5C1C4CD91B001AE625 /* SHTStoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38D571C4CD91B001AE625 /* SHTStoresViewController.m */; };
+		0EE38D5D1C4CD91B001AE625 /* libnaturelib.framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE38D5A1C4CD91B001AE625 /* libnaturelib.framework.a */; };
+		0EE38D5F1C4CD9B0001AE625 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE38D5E1C4CD9B0001AE625 /* libsqlite3.0.tbd */; };
+		0EE38D611C4CD9B4001AE625 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE38D601C4CD9B4001AE625 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EE38D011C4CD8C6001AE625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EE38CDF1C4CD8C6001AE625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EE38CE61C4CD8C6001AE625;
+			remoteInfo = shituPositionDemo;
+		};
+		0EE38D0C1C4CD8C6001AE625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EE38CDF1C4CD8C6001AE625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EE38CE61C4CD8C6001AE625;
+			remoteInfo = shituPositionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EE38CE71C4CD8C6001AE625 /* shituPositionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shituPositionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE38CEB1C4CD8C6001AE625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0EE38CED1C4CD8C6001AE625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0EE38CEE1C4CD8C6001AE625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0EE38CF01C4CD8C6001AE625 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0EE38CF11C4CD8C6001AE625 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0EE38CF41C4CD8C6001AE625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EE38CF61C4CD8C6001AE625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EE38CF91C4CD8C6001AE625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EE38CFB1C4CD8C6001AE625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE38D001C4CD8C6001AE625 /* shituPositionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shituPositionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE38D041C4CD8C6001AE625 /* shituPositionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shituPositionDemoTests.m; sourceTree = "<group>"; };
+		0EE38D061C4CD8C6001AE625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE38D0B1C4CD8C6001AE625 /* shituPositionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shituPositionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE38D0F1C4CD8C6001AE625 /* shituPositionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shituPositionDemoUITests.m; sourceTree = "<group>"; };
+		0EE38D111C4CD8C6001AE625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE38D1D1C4CD91B001AE625 /* SHTLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTLocationViewController.m; sourceTree = "<group>"; };
+		0EE38D1F1C4CD91B001AE625 /* SHTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTBeacon.h; sourceTree = "<group>"; };
+		0EE38D201C4CD91B001AE625 /* SHTByteable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTByteable.h; sourceTree = "<group>"; };
+		0EE38D211C4CD91B001AE625 /* SHTDataDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTDataDef.h; sourceTree = "<group>"; };
+		0EE38D221C4CD91B001AE625 /* SHTDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTDB.h; sourceTree = "<group>"; };
+		0EE38D231C4CD91B001AE625 /* SHTHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTHeader.h; sourceTree = "<group>"; };
+		0EE38D241C4CD91B001AE625 /* SHTIBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTIBeacon.h; sourceTree = "<group>"; };
+		0EE38D251C4CD91B001AE625 /* SHTIBeaconLocationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTIBeaconLocationImpl.h; sourceTree = "<group>"; };
+		0EE38D261C4CD91B001AE625 /* SHTKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTKey.h; sourceTree = "<group>"; };
+		0EE38D271C4CD91B001AE625 /* SHTKey_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTKey_Private.h; sourceTree = "<group>"; };
+		0EE38D281C4CD91B001AE625 /* SHTLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLinkedList.h; sourceTree = "<group>"; };
+		0EE38D291C4CD91B001AE625 /* SHTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocation.h; sourceTree = "<group>"; };
+		0EE38D2A1C4CD91B001AE625 /* SHTLocationCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocationCloud.h; sourceTree = "<group>"; };
+		0EE38D2B1C4CD91B001AE625 /* SHTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocationManager.h; sourceTree = "<group>"; };
+		0EE38D2C1C4CD91B001AE625 /* SHTLocationManager_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocationManager_Private.h; sourceTree = "<group>"; };
+		0EE38D2D1C4CD91B001AE625 /* SHTLocationParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocationParameters.h; sourceTree = "<group>"; };
+		0EE38D2E1C4CD91B001AE625 /* SHTLocationParameters_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocationParameters_Private.h; sourceTree = "<group>"; };
+		0EE38D2F1C4CD91B001AE625 /* SHTLocType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocType.h; sourceTree = "<group>"; };
+		0EE38D301C4CD91B001AE625 /* SHTMagCalibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTMagCalibrator.h; sourceTree = "<group>"; };
+		0EE38D311C4CD91B001AE625 /* SHTNatureBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureBundle.h; sourceTree = "<group>"; };
+		0EE38D321C4CD91B001AE625 /* SHTNatureCollectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureCollectData.h; sourceTree = "<group>"; };
+		0EE38D331C4CD91B001AE625 /* SHTNatureCollectData_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureCollectData_Private.h; sourceTree = "<group>"; };
+		0EE38D341C4CD91B001AE625 /* SHTNatureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureData.h; sourceTree = "<group>"; };
+		0EE38D351C4CD91B001AE625 /* SHTNatureLocationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureLocationImpl.h; sourceTree = "<group>"; };
+		0EE38D361C4CD91B001AE625 /* SHTNatureLocationLocalImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureLocationLocalImpl.h; sourceTree = "<group>"; };
+		0EE38D371C4CD91B001AE625 /* SHTNatureLocationLocalImpl_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureLocationLocalImpl_Private.h; sourceTree = "<group>"; };
+		0EE38D381C4CD91B001AE625 /* SHTNatureParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNatureParameters.h; sourceTree = "<group>"; };
+		0EE38D391C4CD91B001AE625 /* SHTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNode.h; sourceTree = "<group>"; };
+		0EE38D3A1C4CD91B001AE625 /* SHTOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTOrientation.h; sourceTree = "<group>"; };
+		0EE38D3B1C4CD91B001AE625 /* SHTPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPOI.h; sourceTree = "<group>"; };
+		0EE38D3C1C4CD91B001AE625 /* SHTPOIPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPOIPath.h; sourceTree = "<group>"; };
+		0EE38D3D1C4CD91B001AE625 /* SHTPOIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPOIS.h; sourceTree = "<group>"; };
+		0EE38D3E1C4CD91B001AE625 /* SHTPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPosition.h; sourceTree = "<group>"; };
+		0EE38D3F1C4CD91B001AE625 /* SHTPosition_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPosition_Private.h; sourceTree = "<group>"; };
+		0EE38D401C4CD91B001AE625 /* SHTPositionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPositionHeader.h; sourceTree = "<group>"; };
+		0EE38D411C4CD91B001AE625 /* SHTPositionHeader_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPositionHeader_Private.h; sourceTree = "<group>"; };
+		0EE38D421C4CD91B001AE625 /* SHTPositionSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPositionSocket.h; sourceTree = "<group>"; };
+		0EE38D431C4CD91B001AE625 /* SHTPositionSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPositionSocketDelegate.h; sourceTree = "<group>"; };
+		0EE38D441C4CD91B001AE625 /* SHTPrimaryDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPrimaryDatas.h; sourceTree = "<group>"; };
+		0EE38D451C4CD91B001AE625 /* SHTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTQueue.h; sourceTree = "<group>"; };
+		0EE38D461C4CD91B001AE625 /* SHTQueueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTQueueList.h; sourceTree = "<group>"; };
+		0EE38D471C4CD91B001AE625 /* SHTSensorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSensorDelegate.h; sourceTree = "<group>"; };
+		0EE38D481C4CD91B001AE625 /* SHTSensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSensors.h; sourceTree = "<group>"; };
+		0EE38D491C4CD91B001AE625 /* SHTSmallFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSmallFloat.h; sourceTree = "<group>"; };
+		0EE38D4A1C4CD91B001AE625 /* SHTSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSocket.h; sourceTree = "<group>"; };
+		0EE38D4B1C4CD91B001AE625 /* SHTSocketDataBundle_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSocketDataBundle_Private.h; sourceTree = "<group>"; };
+		0EE38D4C1C4CD91B001AE625 /* SHTSocketDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSocketDataType.h; sourceTree = "<group>"; };
+		0EE38D4D1C4CD91B001AE625 /* SHTSocketUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSocketUtils.h; sourceTree = "<group>"; };
+		0EE38D4E1C4CD91B001AE625 /* SHTStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStep.h; sourceTree = "<group>"; };
+		0EE38D4F1C4CD91B001AE625 /* SHTStepDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStepDelegate.h; sourceTree = "<group>"; };
+		0EE38D501C4CD91B001AE625 /* SHTSteper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTSteper.h; sourceTree = "<group>"; };
+		0EE38D511C4CD91B001AE625 /* SHTStepList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStepList.h; sourceTree = "<group>"; };
+		0EE38D521C4CD91B001AE625 /* SHTStepList_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStepList_Private.h; sourceTree = "<group>"; };
+		0EE38D531C4CD91B001AE625 /* SHTStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStore.h; sourceTree = "<group>"; };
+		0EE38D541C4CD91B001AE625 /* SHTStore_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStore_Private.h; sourceTree = "<group>"; };
+		0EE38D551C4CD91B001AE625 /* SHTStoreDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStoreDatas.h; sourceTree = "<group>"; };
+		0EE38D561C4CD91B001AE625 /* SHTTimerBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTTimerBeacon.h; sourceTree = "<group>"; };
+		0EE38D571C4CD91B001AE625 /* SHTStoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTStoresViewController.m; sourceTree = "<group>"; };
+		0EE38D581C4CD91B001AE625 /* SHTStoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTStoresViewController.h; sourceTree = "<group>"; };
+		0EE38D591C4CD91B001AE625 /* SHTLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLocationViewController.h; sourceTree = "<group>"; };
+		0EE38D5A1C4CD91B001AE625 /* libnaturelib.framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnaturelib.framework.a; sourceTree = "<group>"; };
+		0EE38D5E1C4CD9B0001AE625 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0EE38D601C4CD9B4001AE625 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EE38CE41C4CD8C6001AE625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE38D611C4CD9B4001AE625 /* libsqlite3.tbd in Frameworks */,
+				0EE38D5F1C4CD9B0001AE625 /* libsqlite3.0.tbd in Frameworks */,
+				0EE38D5D1C4CD91B001AE625 /* libnaturelib.framework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EE38CFD1C4CD8C6001AE625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EE38D081C4CD8C6001AE625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EE38CDE1C4CD8C6001AE625 = {
+			isa = PBXGroup;
+			children = (
+				0EE38D601C4CD9B4001AE625 /* libsqlite3.tbd */,
+				0EE38D5E1C4CD9B0001AE625 /* libsqlite3.0.tbd */,
+				0EE38CE91C4CD8C6001AE625 /* shituPositionDemo */,
+				0EE38D031C4CD8C6001AE625 /* shituPositionDemoTests */,
+				0EE38D0E1C4CD8C6001AE625 /* shituPositionDemoUITests */,
+				0EE38CE81C4CD8C6001AE625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EE38CE81C4CD8C6001AE625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EE38CE71C4CD8C6001AE625 /* shituPositionDemo.app */,
+				0EE38D001C4CD8C6001AE625 /* shituPositionDemoTests.xctest */,
+				0EE38D0B1C4CD8C6001AE625 /* shituPositionDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EE38CE91C4CD8C6001AE625 /* shituPositionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0EE38CED1C4CD8C6001AE625 /* AppDelegate.h */,
+				0EE38CEE1C4CD8C6001AE625 /* AppDelegate.m */,
+				0EE38D1E1C4CD91B001AE625 /* include */,
+				0EE38D581C4CD91B001AE625 /* SHTStoresViewController.h */,
+				0EE38D571C4CD91B001AE625 /* SHTStoresViewController.m */,
+				0EE38D591C4CD91B001AE625 /* SHTLocationViewController.h */,
+				0EE38D1D1C4CD91B001AE625 /* SHTLocationViewController.m */,
+				0EE38D5A1C4CD91B001AE625 /* libnaturelib.framework.a */,
+				0EE38CF01C4CD8C6001AE625 /* ViewController.h */,
+				0EE38CF11C4CD8C6001AE625 /* ViewController.m */,
+				0EE38CF31C4CD8C6001AE625 /* Main.storyboard */,
+				0EE38CF61C4CD8C6001AE625 /* Assets.xcassets */,
+				0EE38CF81C4CD8C6001AE625 /* LaunchScreen.storyboard */,
+				0EE38CFB1C4CD8C6001AE625 /* Info.plist */,
+				0EE38CEA1C4CD8C6001AE625 /* Supporting Files */,
+			);
+			path = shituPositionDemo;
+			sourceTree = "<group>";
+		};
+		0EE38CEA1C4CD8C6001AE625 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EE38CEB1C4CD8C6001AE625 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EE38D031C4CD8C6001AE625 /* shituPositionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EE38D041C4CD8C6001AE625 /* shituPositionDemoTests.m */,
+				0EE38D061C4CD8C6001AE625 /* Info.plist */,
+			);
+			path = shituPositionDemoTests;
+			sourceTree = "<group>";
+		};
+		0EE38D0E1C4CD8C6001AE625 /* shituPositionDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0EE38D0F1C4CD8C6001AE625 /* shituPositionDemoUITests.m */,
+				0EE38D111C4CD8C6001AE625 /* Info.plist */,
+			);
+			path = shituPositionDemoUITests;
+			sourceTree = "<group>";
+		};
+		0EE38D1E1C4CD91B001AE625 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0EE38D1F1C4CD91B001AE625 /* SHTBeacon.h */,
+				0EE38D201C4CD91B001AE625 /* SHTByteable.h */,
+				0EE38D211C4CD91B001AE625 /* SHTDataDef.h */,
+				0EE38D221C4CD91B001AE625 /* SHTDB.h */,
+				0EE38D231C4CD91B001AE625 /* SHTHeader.h */,
+				0EE38D241C4CD91B001AE625 /* SHTIBeacon.h */,
+				0EE38D251C4CD91B001AE625 /* SHTIBeaconLocationImpl.h */,
+				0EE38D261C4CD91B001AE625 /* SHTKey.h */,
+				0EE38D271C4CD91B001AE625 /* SHTKey_Private.h */,
+				0EE38D281C4CD91B001AE625 /* SHTLinkedList.h */,
+				0EE38D291C4CD91B001AE625 /* SHTLocation.h */,
+				0EE38D2A1C4CD91B001AE625 /* SHTLocationCloud.h */,
+				0EE38D2B1C4CD91B001AE625 /* SHTLocationManager.h */,
+				0EE38D2C1C4CD91B001AE625 /* SHTLocationManager_Private.h */,
+				0EE38D2D1C4CD91B001AE625 /* SHTLocationParameters.h */,
+				0EE38D2E1C4CD91B001AE625 /* SHTLocationParameters_Private.h */,
+				0EE38D2F1C4CD91B001AE625 /* SHTLocType.h */,
+				0EE38D301C4CD91B001AE625 /* SHTMagCalibrator.h */,
+				0EE38D311C4CD91B001AE625 /* SHTNatureBundle.h */,
+				0EE38D321C4CD91B001AE625 /* SHTNatureCollectData.h */,
+				0EE38D331C4CD91B001AE625 /* SHTNatureCollectData_Private.h */,
+				0EE38D341C4CD91B001AE625 /* SHTNatureData.h */,
+				0EE38D351C4CD91B001AE625 /* SHTNatureLocationImpl.h */,
+				0EE38D361C4CD91B001AE625 /* SHTNatureLocationLocalImpl.h */,
+				0EE38D371C4CD91B001AE625 /* SHTNatureLocationLocalImpl_Private.h */,
+				0EE38D381C4CD91B001AE625 /* SHTNatureParameters.h */,
+				0EE38D391C4CD91B001AE625 /* SHTNode.h */,
+				0EE38D3A1C4CD91B001AE625 /* SHTOrientation.h */,
+				0EE38D3B1C4CD91B001AE625 /* SHTPOI.h */,
+				0EE38D3C1C4CD91B001AE625 /* SHTPOIPath.h */,
+				0EE38D3D1C4CD91B001AE625 /* SHTPOIS.h */,
+				0EE38D3E1C4CD91B001AE625 /* SHTPosition.h */,
+				0EE38D3F1C4CD91B001AE625 /* SHTPosition_Private.h */,
+				0EE38D401C4CD91B001AE625 /* SHTPositionHeader.h */,
+				0EE38D411C4CD91B001AE625 /* SHTPositionHeader_Private.h */,
+				0EE38D421C4CD91B001AE625 /* SHTPositionSocket.h */,
+				0EE38D431C4CD91B001AE625 /* SHTPositionSocketDelegate.h */,
+				0EE38D441C4CD91B001AE625 /* SHTPrimaryDatas.h */,
+				0EE38D451C4CD91B001AE625 /* SHTQueue.h */,
+				0EE38D461C4CD91B001AE625 /* SHTQueueList.h */,
+				0EE38D471C4CD91B001AE625 /* SHTSensorDelegate.h */,
+				0EE38D481C4CD91B001AE625 /* SHTSensors.h */,
+				0EE38D491C4CD91B001AE625 /* SHTSmallFloat.h */,
+				0EE38D4A1C4CD91B001AE625 /* SHTSocket.h */,
+				0EE38D4B1C4CD91B001AE625 /* SHTSocketDataBundle_Private.h */,
+				0EE38D4C1C4CD91B001AE625 /* SHTSocketDataType.h */,
+				0EE38D4D1C4CD91B001AE625 /* SHTSocketUtils.h */,
+				0EE38D4E1C4CD91B001AE625 /* SHTStep.h */,
+				0EE38D4F1C4CD91B001AE625 /* SHTStepDelegate.h */,
+				0EE38D501C4CD91B001AE625 /* SHTSteper.h */,
+				0EE38D511C4CD91B001AE625 /* SHTStepList.h */,
+				0EE38D521C4CD91B001AE625 /* SHTStepList_Private.h */,
+				0EE38D531C4CD91B001AE625 /* SHTStore.h */,
+				0EE38D541C4CD91B001AE625 /* SHTStore_Private.h */,
+				0EE38D551C4CD91B001AE625 /* SHTStoreDatas.h */,
+				0EE38D561C4CD91B001AE625 /* SHTTimerBeacon.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EE38CE61C4CD8C6001AE625 /* shituPositionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EE38D141C4CD8C6001AE625 /* Build configuration list for PBXNativeTarget "shituPositionDemo" */;
+			buildPhases = (
+				0EE38CE31C4CD8C6001AE625 /* Sources */,
+				0EE38CE41C4CD8C6001AE625 /* Frameworks */,
+				0EE38CE51C4CD8C6001AE625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shituPositionDemo;
+			productName = shituPositionDemo;
+			productReference = 0EE38CE71C4CD8C6001AE625 /* shituPositionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EE38CFF1C4CD8C6001AE625 /* shituPositionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EE38D171C4CD8C6001AE625 /* Build configuration list for PBXNativeTarget "shituPositionDemoTests" */;
+			buildPhases = (
+				0EE38CFC1C4CD8C6001AE625 /* Sources */,
+				0EE38CFD1C4CD8C6001AE625 /* Frameworks */,
+				0EE38CFE1C4CD8C6001AE625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EE38D021C4CD8C6001AE625 /* PBXTargetDependency */,
+			);
+			name = shituPositionDemoTests;
+			productName = shituPositionDemoTests;
+			productReference = 0EE38D001C4CD8C6001AE625 /* shituPositionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EE38D0A1C4CD8C6001AE625 /* shituPositionDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EE38D1A1C4CD8C6001AE625 /* Build configuration list for PBXNativeTarget "shituPositionDemoUITests" */;
+			buildPhases = (
+				0EE38D071C4CD8C6001AE625 /* Sources */,
+				0EE38D081C4CD8C6001AE625 /* Frameworks */,
+				0EE38D091C4CD8C6001AE625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EE38D0D1C4CD8C6001AE625 /* PBXTargetDependency */,
+			);
+			name = shituPositionDemoUITests;
+			productName = shituPositionDemoUITests;
+			productReference = 0EE38D0B1C4CD8C6001AE625 /* shituPositionDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EE38CDF1C4CD8C6001AE625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ubirouting;
+				TargetAttributes = {
+					0EE38CE61C4CD8C6001AE625 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0EE38CFF1C4CD8C6001AE625 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0EE38CE61C4CD8C6001AE625;
+					};
+					0EE38D0A1C4CD8C6001AE625 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0EE38CE61C4CD8C6001AE625;
+					};
+				};
+			};
+			buildConfigurationList = 0EE38CE21C4CD8C6001AE625 /* Build configuration list for PBXProject "shituPositionDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EE38CDE1C4CD8C6001AE625;
+			productRefGroup = 0EE38CE81C4CD8C6001AE625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EE38CE61C4CD8C6001AE625 /* shituPositionDemo */,
+				0EE38CFF1C4CD8C6001AE625 /* shituPositionDemoTests */,
+				0EE38D0A1C4CD8C6001AE625 /* shituPositionDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EE38CE51C4CD8C6001AE625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE38CFA1C4CD8C6001AE625 /* LaunchScreen.storyboard in Resources */,
+				0EE38CF71C4CD8C6001AE625 /* Assets.xcassets in Resources */,
+				0EE38CF51C4CD8C6001AE625 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EE38CFE1C4CD8C6001AE625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EE38D091C4CD8C6001AE625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EE38CE31C4CD8C6001AE625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE38D5C1C4CD91B001AE625 /* SHTStoresViewController.m in Sources */,
+				0EE38CF21C4CD8C6001AE625 /* ViewController.m in Sources */,
+				0EE38D5B1C4CD91B001AE625 /* SHTLocationViewController.m in Sources */,
+				0EE38CEF1C4CD8C6001AE625 /* AppDelegate.m in Sources */,
+				0EE38CEC1C4CD8C6001AE625 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EE38CFC1C4CD8C6001AE625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE38D051C4CD8C6001AE625 /* shituPositionDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EE38D071C4CD8C6001AE625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE38D101C4CD8C6001AE625 /* shituPositionDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EE38D021C4CD8C6001AE625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EE38CE61C4CD8C6001AE625 /* shituPositionDemo */;
+			targetProxy = 0EE38D011C4CD8C6001AE625 /* PBXContainerItemProxy */;
+		};
+		0EE38D0D1C4CD8C6001AE625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EE38CE61C4CD8C6001AE625 /* shituPositionDemo */;
+			targetProxy = 0EE38D0C1C4CD8C6001AE625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0EE38CF31C4CD8C6001AE625 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EE38CF41C4CD8C6001AE625 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EE38CF81C4CD8C6001AE625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EE38CF91C4CD8C6001AE625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EE38D121C4CD8C6001AE625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0EE38D131C4CD8C6001AE625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EE38D151C4CD8C6001AE625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = shituPositionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/shituPositionDemo",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubirouting.shituPositionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0EE38D161C4CD8C6001AE625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = shituPositionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/shituPositionDemo",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubirouting.shituPositionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0EE38D181C4CD8C6001AE625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = shituPositionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubirouting.shituPositionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shituPositionDemo.app/shituPositionDemo";
+			};
+			name = Debug;
+		};
+		0EE38D191C4CD8C6001AE625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = shituPositionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubirouting.shituPositionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shituPositionDemo.app/shituPositionDemo";
+			};
+			name = Release;
+		};
+		0EE38D1B1C4CD8C6001AE625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = shituPositionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubirouting.shituPositionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = shituPositionDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0EE38D1C1C4CD8C6001AE625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = shituPositionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubirouting.shituPositionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = shituPositionDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EE38CE21C4CD8C6001AE625 /* Build configuration list for PBXProject "shituPositionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE38D121C4CD8C6001AE625 /* Debug */,
+				0EE38D131C4CD8C6001AE625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EE38D141C4CD8C6001AE625 /* Build configuration list for PBXNativeTarget "shituPositionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE38D151C4CD8C6001AE625 /* Debug */,
+				0EE38D161C4CD8C6001AE625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EE38D171C4CD8C6001AE625 /* Build configuration list for PBXNativeTarget "shituPositionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE38D181C4CD8C6001AE625 /* Debug */,
+				0EE38D191C4CD8C6001AE625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EE38D1A1C4CD8C6001AE625 /* Build configuration list for PBXNativeTarget "shituPositionDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE38D1B1C4CD8C6001AE625 /* Debug */,
+				0EE38D1C1C4CD8C6001AE625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EE38CDF1C4CD8C6001AE625 /* Project object */;
+}

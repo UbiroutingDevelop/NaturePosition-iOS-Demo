@@ -15,5 +15,6 @@
 @property (nonatomic) float y;
 @property (nonatomic) int angle;
 @property (nonatomic) int radius;
+@property (nonatomic) short source;
 @end
 

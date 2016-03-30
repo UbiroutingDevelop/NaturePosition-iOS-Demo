@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     [self startLocate];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
 //启动定位
@@ -33,23 +34,13 @@
     initPosition.y = -1;
     initPosition.floor = 1;
     NSLog(@"store is %@", _store);
-    //需传入每个楼层的地图的像素宽度和高度，用以进行边界判断，该高宽需和采集时使用的地图高宽一致
-    struct MapSize * mapSize = malloc(sizeof(struct MapSize) * 1);
-//    mapSize[0].floor = 1;
-//    mapSize[0].width = 1024;
-//    mapSize[0].height = 1024;
-    
-    mapSize[0].floor = 1;
-    mapSize[0].width = 1024;
-    mapSize[0].height = 1024;
-    
     
     //初始化定位参数， storeTest为2.2节中获取的任意store
-   SHTLocationParameters * parameters = [[SHTLocationParameters alloc]initWithStore:_store AndInitPosition:initPosition AndKey:@"566a10ed1cee5dad43388b3321d3e7bb" AndMapSize:mapSize AndLocType:LOCTYPE_MAG_ONLY];
+   SHTLocationParameters * parameters = [[SHTLocationParameters alloc]initWithStore:_store AndInitPosition:initPosition AndKey:@"566a10ed1cee5dad43388b3321d3e7bb" WithLocType:LOCTYPE_MAG_ONLY];
 
     //实例化一个locationManager对象
     _locationManager = [SHTLocationManager buildLocationManagerBy:parameters];
-    
+
     //设置代理
     _locationManager.delegate = self;
     
@@ -71,6 +62,10 @@
     //在这里更新角度（指南针）
 }
 
+- (void)onSwitchFloor:(int)area{
+    
+}
+
 - (void)getStatus:(int)status Message:(NSString *)message
 {
     //再这里获取状态信息。
@@ -84,11 +79,11 @@
 }
 -(void)onNetProblem:(NSException *)exception
 {
-    
+    NSLog(@"netproblem");
 }
 -(void)onError:(NSError *)error
 {
-    
+    NSLog(@"error is %@", error);
 }
 -(void)onReconnectOK
 {

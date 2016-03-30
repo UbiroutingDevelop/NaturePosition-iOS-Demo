@@ -17,8 +17,12 @@
 #define ERROR_NETWORK_CONNECTED_FAILED 13;
 #define ERROR_NETWORK_RECONNECT_FAILED 0x02;
 
+// 初次获取一个比较可信的坐标，只有拿到这个状态后，才比较可信
 #define STATUS_FIRST_RELIABLE_POSITION 200
+
+// 开始定位
 #define STATUS_START_LOCATE 400
+
 
 // 获取坐标的代理
 @protocol SHTLocationDelegate <NSObject>
@@ -26,10 +30,13 @@
 //更新坐标
 - (void) getLocation: (SHTPosition *) position;
 
+//变换楼层
+- (void) onSwitchFloor: (int)area;
+
 //更新状态
 - (void) getStatus: (int)status Message: (NSString *)message;
 
-// 更新状态
+// 更新角度，指磁南极，顺时针为正
 - (void) getAngle: (int) angle;
 
 //更新状态
@@ -49,7 +56,8 @@
 
 + (SHTLocationManager *)buildLocationManagerBy: (SHTLocationParameters *) para;
 
++ (NSString *)sdkVersion;
+
 - (void)start;
 - (void)stop;
-+ (NSString *)sdkVersion;
 @end

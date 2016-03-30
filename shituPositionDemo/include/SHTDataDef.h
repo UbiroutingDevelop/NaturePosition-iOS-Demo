@@ -50,8 +50,6 @@ struct IndoorPosition
 
 typedef struct{
     int floor;
-    int width;
-    int height;
     float scale;
     int angleOffset;
 } SHTFloor;

@@ -23,19 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    /**
-     *  key:需要在识途云申请
-     **/
-    SHTStoreDatas * datas = [[SHTStoreDatas alloc]initWithKey:@"566a10ed1cee5dad43388b3321d3e7bb"];
+    
+    //key:需要在识途云申请
+    SHTStoreDatas * datas = [[SHTStoreDatas alloc]initWithKey:@"yourKey"];
     datas.delegate = self;
     [datas fetchData];
-    
-    // Do any additional setup after loading the view.
 }
 - (void)onGetDatas:(NSArray *)datas
 {
-    //handle the stores here
+    //获取数据，每一个均为一个SHTStore对象
     _stores = [NSMutableArray arrayWithArray:datas];
+    NSLog(@"%@", datas);
     [self showStores];
 }
 
@@ -68,7 +66,9 @@
         
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",_stores[indexPath.row]];
+    
+    SHTStore * store = (SHTStore *)_stores[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"name:%@ id:%ld",store.name, store.idd];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

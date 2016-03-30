@@ -9,10 +9,12 @@
 #import "SHTDataDef.h"
 #import "SHTLocType.h"
 
+#define WEICHAT_UUID @"FDA50693-A4E2-4FB1-AFCF-C6EB07647825"
+
 @class SHTStore;
 
 @interface SHTLocationParameters : NSObject
-
-- (instancetype)initWithStore:(SHTStore *)store AndInitPosition:(struct IndoorPosition)initPosition AndKey:(NSString *)key AndMapSize:(struct MapSize *)size AndLocType: (enum LocType)locType;
+@property (nonatomic, readonly) NSString * UUID;
+- (instancetype)initWithStore:(SHTStore *)store AndInitPosition:(struct IndoorPosition)initPosition AndKey:(NSString *)key WithLocType: (enum LocType)locType;
 
 @end

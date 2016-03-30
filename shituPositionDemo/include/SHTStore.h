@@ -18,4 +18,10 @@
 
 @property (nonatomic) struct BaiduGPSCoordinate coordinate;
 
+@property (nonatomic) long idd;
+
+@property (nonatomic) int floorNum;
+
+@property (nonatomic) SHTFloor * floorParameters;
+
 @end

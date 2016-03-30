@@ -10,6 +10,7 @@
 #import "SHTLocationParameters.h"
 #import "SHTStore.h"
 #import "SHTStoreDatas.h"
+#import "DemoKey.h"
 
 
 #import "SHTLocationViewController.h"
@@ -25,7 +26,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     //key:需要在识途云申请
-    SHTStoreDatas * datas = [[SHTStoreDatas alloc]initWithKey:@"yourKey"];
+    SHTStoreDatas * datas = [[SHTStoreDatas alloc]initWithKey:KEY];
     datas.delegate = self;
     [datas fetchData];
 }

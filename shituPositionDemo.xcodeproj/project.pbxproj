@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD21F8A1CABB47B00816B17 /* DemoKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoKey.h; sourceTree = "<group>"; };
 		0EE38CE71C4CD8C6001AE625 /* shituPositionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shituPositionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE38CEB1C4CD8C6001AE625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EE38CED1C4CD8C6001AE625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 				0EE38CF81C4CD8C6001AE625 /* LaunchScreen.storyboard */,
 				0EE38CFB1C4CD8C6001AE625 /* Info.plist */,
 				0EE38CEA1C4CD8C6001AE625 /* Supporting Files */,
+				0BD21F8A1CABB47B00816B17 /* DemoKey.h */,
 			);
 			path = shituPositionDemo;
 			sourceTree = "<group>";

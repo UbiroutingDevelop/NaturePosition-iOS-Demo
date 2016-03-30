@@ -11,6 +11,7 @@
 #import "SHTLocationParameters.h"
 #import "SHTPosition.h"
 #import "SHTLocationManager.h"
+#import "DemoKey.h"
 
 @interface SHTLocationViewController ()<SHTLocationDelegate>
 @property(nonatomic,strong)SHTLocationManager *locationManager;
@@ -36,7 +37,7 @@
     NSLog(@"store is %@", _store);
     
     //初始化定位参数， storeTest为2.2节中获取的任意store
-   SHTLocationParameters * parameters = [[SHTLocationParameters alloc]initWithStore:_store AndInitPosition:initPosition AndKey:@"566a10ed1cee5dad43388b3321d3e7bb" WithLocType:LOCTYPE_MAG_ONLY];
+   SHTLocationParameters * parameters = [[SHTLocationParameters alloc]initWithStore:_store AndInitPosition:initPosition AndKey:KEY WithLocType:LOCTYPE_MAG_ONLY];
 
     //实例化一个locationManager对象
     _locationManager = [SHTLocationManager buildLocationManagerBy:parameters];
